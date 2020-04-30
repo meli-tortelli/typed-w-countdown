@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Para tu compleaños</title>
+  </head>
+
+  <body>
+    <div class="container-text-editor">
+      <div class="header-container">
+        <div class="dots" id="red"><a href="#"> </a></div>
+        <div class="dots" id="black"><a href="#"> </a></div>
+        <div class="dots" id="yellow"><a href="#"> </a></div>
+      </div>
+      <div class="body-container">
+        <p class="typed-text"><span class="typed-new-text" id="typed-text"></span>
+          <span class="cursor" id="cursor">&nbsp;</span></p>
+      </div>
+    </div>
+
+    <div id="year" class="year"></div>
+
+    <div id="countdown" class="countdown">
+      <div class="time">
+        <h2 id="days">00</h2>
+        <small>dias</small>
+      </div>
+      <div class="time">
+        <h2 id="hours">00</h2>
+        <small>horas</small>
+      </div>
+      <div class="time">
+        <h2 id="minutes">00</h2>
+        <small>minutos</small>
+      </div>
+      <div class="time">
+        <h2 id="seconds">00</h2>
+        <small>segundos</small>
+      </div>
+    </div>
+    <footer></footer>
+
+    <img src="./img/spinner.gif" alt="Carregando" id="loading">
+    <script src="./src/app.js"></script>
+  </body>
+
+</html>

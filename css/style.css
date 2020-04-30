@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Manrope|Inconsolata&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #427122;
+  background-image: url('../img/art.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+  height: 100vh;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  z-index: 1;
+}
+
+.container-text-editor {
+  margin: auto;
+  position: absolute;
+  font-family: 'Source Code Pro', monospace;
+  height: 300px;
+  width: 500px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background-color:  rgba(0, 0, 0, 0.50);
+  color: #f0f0f0;
+  text-shadow: #000 0px 1px 0px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+}
+
+.body-container p {
+  font-size: 0.7rem;
+  text-align: left;
+  letter-spacing: 1.5px;
+  margin-left: 10px;
+}
+
+.typed-new-text {
+  font-size: 1rem;
+  text-align: left;
+  color: #f0f0f0;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  animation: blink 1s infinite;
+}
+
+.cursor .typing {
+  animation: none;
+}
+
+@keyframes blink {
+  0% { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100% { background-color: #ccc;}
+}
+
+.year {
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 85px;
+  z-index: -1;
+  opacity: 0.3;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.countdown {
+  font-family: 'Source Code Pro', monospace;;
+  font-size: 20px;
+  display: flex;
+  margin: 220px 0 00;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 5px;
+}
+
+.time h2 {
+  margin: 0 5px 0 5px;
+}
+
+.time small {
+  margin: 0 5px 0 5px;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  .time {
+    margin: 5px;
+  }
+
+  .time h2 {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .time small {
+    font-size: 10px;
+  }
+}
